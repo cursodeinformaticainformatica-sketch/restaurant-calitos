@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nombre del Restaurante - Landing Page</title>
+    <link rel="stylesheet" href="css/style.css">
+   
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">🍽 *SaborExquisito*</div>
+        <nav class="nav-links" id="navMenu">
+            <a href="#inicio">Inicio</a>
+            <a href="#empresa">Empresa</a>
+            <a href="#productos">Menú</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+        <button class="nav-toggle" aria-label="Abrir menú" id="navToggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero">
+            <h1 class="fade-in">Bienvenido a *SaborExquisito*</h1>
+            <p class="slide-up">Donde cada plato cuenta una historia.</p>
+            <a href="#productos" class="cta-button pulse-animation">Ver Menú Completo</a>
+        </section>
+
+        <section id="carousel-section" class="section-padding">
+            <h2>Nuestros Ambientes y Platos</h2>
+            <div class="carousel-container">
+                <div class="carousel-slide">
+                    <img src="img/carrusel.jpg" alt="Plato 1" class="carousel-img">
+                    <img src="img/ambiente.jpg" alt="Ambiente 1" class="carousel-img">
+                    <img src="img/carrusel2.jpg" alt="Plato 2" class="carousel-img">
+                </div>
+                <button class="prev" aria-label="Anterior">&#10094;</button>
+                <button class="next" aria-label="Siguiente">&#10095;</button>
+            </div>
+        </section>
+
+        <section id="empresa" class="section-padding bg-light">
+            <h2>Nuestra Esencia</h2>
+            <div class="empresa-grid">
+                <div class="card fly-in">
+                    <h3>Misión</h3>
+                    <p>Ofrecer una experiencia culinaria memorable a través de ingredientes frescos y un servicio excepcional, superando las expectativas del cliente.</p>
+                </div>
+                <div class="card fly-in delay-200">
+                    <h3>Visión</h3>
+                    <p>Ser reconocidos como el restaurante líder de la región por nuestra innovación en la cocina y nuestro compromiso con la sostenibilidad.</p>
+                </div>
+                <div class="card fly-in delay-400">
+                    <h3>Valores</h3>
+                    <p>*Calidad, Pasión, Integridad* y *Servicio al Cliente* como pilares de nuestro día a día.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="productos" class="section-padding">
+            <h2>Nuestros Platos Estrella</h2>
+            <div class="productos-grid">
+                <article class="product-card zoom-hover">
+                    <img src="img/filete.jpg" alt="Plato Principal">
+                    <h3>Filete Mignon Especial</h3>
+                    <p class="tag-detail">Plato principal con guarnición de la casa.</p>
+                    <span class="price">$$$</span>
+                </article>
+                <article class="product-card zoom-hover">
+                    <img src="img/tostadas.jpg" alt="Entrante">
+                    <h3>Tostas de Pulpo</h3>
+                    <p class="tag-detail">Entrante fresco y ligero con aliño cítrico.</p>
+                    <span class="price">$$</span>
+                </article>
+                <article class="product-card zoom-hover">
+                    <img src="img/chocolate.jpg" alt="Postre">
+                    <h3>Tarta de Chocolate Fundido</h3>
+                    <p class="tag-detail">Postre casero, suave y con un toque de sal.</p>
+                    <span class="price">$</span>
+                </article>
+                <article class="product-card zoom-hover">
+                    <img src="img/tortillas.jpg" alt="Postre">
+                    <h3>totopos cremosos</h3>
+                    <p class="tag-detail">Un dip cremoso con trozos de totopos crujientes insertados, servido en un plato rectangular sobre una mesa de madera.</p>
+                    <span class="price">$</span>
+                </article>
+                <article class="product-card zoom-hover">
+                    <img src="img/tostadas con salsas.jpg" alt="Postre">
+                    <h3>Totopos</h3>
+                    <p class="tag-detail">Una bandeja con totopos (chips de tortilla) acompañados de tres salsas diferentes: una salsa roja, guacamole y una salsa de queso o salsa amarilla.</p>
+                    <span class="price">$</span>
+                </article>
+                <article class="product-card zoom-hover">
+                    <img src="img/filete con salsa.jpg" alt="Postre">
+                    <h3>Camarones</h3>
+                    <p class="tag-detail">Camarones envueltos en tocino sobre una base de pan tostado con una salsa cremosa y huevos pochados, decorado con cebollín picado y pimentón.</p>
+                    <span class="price">$</span>
+                </article>
+            </div>
+        </section>
+
+        <section id="contacto" class="section-padding bg-light">
+            <h2>Reserva o Contáctanos</h2>
+            <form class="contact-form fly-in-left">
+                <div class="form-group">
+                    <label for="nombre">Nombre Completo:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="mensaje">Mensaje (Reserva, Pregunta, etc.):</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="cta-button hover-shadow">Enviar Mensaje</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 SaborExquisito. Todos los derechos reservados.</p>
+        <div class="social-links">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
